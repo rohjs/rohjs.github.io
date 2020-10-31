@@ -1,0 +1,58 @@
+[
+  {
+    "id": "prismy",
+    "title": "prismyland/prismy",
+    "status": true,
+    "time": 2020,
+    "categories": ["Open Source Project Contributor"],
+    "description": "A maintainer of prismy: Simple and fast type safe server library for now.sh v2 and API routes of next.js"
+  },
+  {
+    "id": "sef",
+    "title": "SEF 2020",
+    "status": true,
+    "time": 2020,
+    "categories": ["Naver Connect", "Talk Show"],
+    "description": "Appeared on Software Edu Festival 2020 as a guest"
+  },
+  {
+    "id": "revisolution",
+    "title": "Revisolution",
+    "status": true,
+    "time": 2017,
+    "categories": ["UI/UX Design", "Frontend Development", "Video Editing"],
+    "description": "A million voices. One document"
+  },
+  {
+    "id": "marko",
+    "title": "Marko",
+    "status": true,
+    "time": 2016,
+    "categories": ["UI/UX Design", "Mobile Design"],
+    "description": "Find your travel buddy — A mobile app for solo travellers to meet others"
+  },
+  {
+    "id": "ted-redesign",
+    "title": "TED Redesign",
+    "status": true,
+    "time": 2016,
+    "categories": ["UI/UX Design", "Mobile Design"],
+    "description": "TED iOS Mobile Application Redesign Showcase"
+  },
+  {
+    "id": "four-questions",
+    "title": "Four Questions",
+    "status": true,
+    "time": 2016,
+    "categories": ["UX Study", "Video Editing"],
+    "description": "Interview"
+  },
+  {
+    "id": "samantha",
+    "title": "Samantha",
+    "status": true,
+    "time": 2015,
+    "categories": ["Contest/1st", "UI/UX Design"],
+    "description": "Imagination Contest, Art&Technology"
+  }
+]
