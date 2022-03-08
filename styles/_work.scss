@@ -1,0 +1,90 @@
+.workBrief {
+  display: none;
+
+  &.active {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    display: block;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+
+  p {
+    flex-grow: 1;
+    margin-bottom: 0;
+    color: $PRIMARY;
+
+    &.description {
+      color: $PRIMARY;
+      word-break: break-all;
+    }
+  }
+
+  dl {
+    flex-shrink: 0;
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: $PRIMARY;
+  }
+
+  .categories {
+    display: block;
+
+    dd {
+      margin-right: 0.5rem;
+    }
+  }
+
+  @include responsive(T) {
+    &.active {
+      display: flex;
+      align-items: flex-start;
+
+      a {
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+
+    a {
+      overflow: hidden;
+    }
+
+    p.description:not(:first-child) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    dl {
+      margin-bottom: 0.5rem;
+    }
+
+    .categories dd {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    a {
+      flex-wrap: wrap;
+    }
+
+    p.description {
+      width: 100%;
+    }
+
+    .categories {
+      display: flex;
+      align-items: center;
+
+      dd {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

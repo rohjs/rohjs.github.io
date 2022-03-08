@@ -1,0 +1,29 @@
+{
+  "Languages": ["Korean", "English"],
+  "Skills": [
+    "HTML5, CSS3, JavaScript",
+    "ES6+, TypeScript",
+    "React, Redux, Next.js",
+    "web3.js, ethers.js",
+    "SCSS/Sass",
+    "Node.js",
+    "Figma"
+  ],
+  "Work experience": [
+    "UI/UX designer @ True North / 2016",
+    "UI/UX designer & Frontend developer @ Likelion / 2017",
+    "UI/UX Designer & UI Developer @ Insomenia / 2017-2018",
+    "UX Developer @ Revisolution PBC / 2017-2018",
+    "UX Developer @ BoostIO / 2018-2019",
+    "Frontend Developer @ Presto Labs / 2020-2022",
+    "⚡️ Frontend Developer @ Planetarium / 2022-"
+  ],
+  "Etc": [
+    "Volunteer at World Friends IT Korea / San Lorenzo, Paraguay / 2014",
+    "Promotion Director / TEDxSogangU / 2014",
+    "Director / TEDxSogangU / 2015",
+    "1st Prize / Imagination Content at Sogang Univ. / 2015",
+    "YouTube Creator / Kimbug / 2019-",
+    "Frontend Online Course Lecturer / Goorm Edu / 2020-"
+  ]
+}

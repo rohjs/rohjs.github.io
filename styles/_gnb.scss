@@ -1,0 +1,64 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1.5rem;
+
+  .gnb {
+    padding-bottom: 0;
+    margin-bottom: 3rem;
+  }
+
+  .gnbMenu {
+    position: relative;
+    display: flex;
+
+    li {
+      margin-right: 0.75rem;
+
+      &:last-child {
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+      }
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include responsive(ML) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  @include responsive(T) {
+    width: 60%;
+    height: 100vh;
+    padding: 50px;
+    padding-bottom: 1rem;
+
+    .gnb {
+      width: 90%;
+      margin-bottom: 4rem;
+      margin-left: 5%;
+    }
+
+    .gnbMenu {
+      margin-bottom: 0;
+
+      li {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    width: 70%;
+
+    .gnb {
+      margin-bottom: 5rem;
+    }
+  }
+}

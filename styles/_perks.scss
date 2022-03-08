@@ -1,0 +1,12 @@
+.perks {
+  display: none;
+
+  @include responsive(T) {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  @include responsive(D) {
+    margin-top: 3rem;
+  }
+}

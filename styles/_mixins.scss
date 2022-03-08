@@ -1,0 +1,27 @@
+@mixin responsive($media) {
+  @if $media == M {
+    @media only screen and (min-width: 375px) {
+      @content;
+    }
+  } @else if $media == ML {
+    @media only screen and (min-width: 568px) {
+      @content;
+    }
+  } @else if $media == T {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $media == D {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $media == HD {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $media) {
+      @content;
+    }
+  }
+}

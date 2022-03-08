@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: $DARK;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  font-size: 1rem;
+  line-height: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+button:hover,
+button:focus,
+button:active {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.srOnly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.muted {
+  opacity: 0.3;
+}
+
+em.wip {
+  margin-left: 0.25rem;
+  font-size: 0.875em;
+}
+
+.app {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.skill {
+  h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: inherit;
+    text-decoration: underline;
+
+    button {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    display: none;
+    margin-bottom: 1.2rem;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.section,
+.sectionWide {
+  padding-bottom: 3rem;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: $DARK;
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 2rem;
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  + ul,
+  + ul li {
+    list-style: disc;
+  }
+
+  + ul {
+    padding-left: 1rem;
+  }
+}
+
+@include responsive(ML) {
+  html {
+    font-size: 16px;
+  }
+
+  .app {
+    width: 540px;
+    margin: 0 auto;
+  }
+}
+
+@include responsive(T) {
+  html {
+    font-size: 18px;
+  }
+
+  .app {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .section,
+  .sectionWide {
+    width: 100%;
+    padding-bottom: 6rem;
+    margin-left: 5%;
+    overflow: auto;
+  }
+
+  .section {
+    width: 85%;
+  }
+}
+
+@include responsive(D) {
+  html {
+    font-size: 20px;
+  }
+
+  main {
+    padding-left: 4rem;
+  }
+
+  .section {
+    width: 85%;
+  }
+}
+
+@include responsive(HD) {
+  main {
+    padding-left: 4rem;
+  }
+
+  .section {
+    width: 80%;
+  }
+
+  .sectionWide {
+    width: 95%;
+  }
+}

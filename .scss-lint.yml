@@ -1,0 +1,45 @@
+scss_files: 'styles/**/*.scss'
+
+linters:
+  ColorVariable:
+    enabled: false
+  DeclarationOrder:
+    enabled: false
+  FinalNewline:
+    enabled: false
+  HexLength:
+    enabled: true
+    style: long
+  HexNotation:
+    enabled: true
+    style: uppercase
+  ImportantRule:
+    enabled: false
+  LeadingZero:
+    enabled: true
+    style: include_zero
+  NameFormat:
+    enabled: false
+  NestingDepth:
+    enabled: true
+    max_depth: 6
+  PropertySortOrder:
+    order: recess
+  QualifyingElement:
+    enabled: false
+  SelectorDepth:
+    enabled: true
+    max_depth: 6
+  SelectorFormat:
+    enabled: true
+    convention: camel_case
+  Shorthand:
+    enabled: true
+    allowed_shorthands: [1, 2, 3, 4]
+  StringQuotes:
+    enabled: true
+    style: single_quotes
+  TrailingSemicolon:
+    enabled: false
+  VendorPrefix:
+    enabled: false

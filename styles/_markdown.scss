@@ -1,0 +1,133 @@
+.markdown {
+  .headerImg {
+    margin-bottom: 3rem;
+  }
+
+  .mr2 {
+    margin-right: 0.368em;
+  }
+
+  .imgContainer {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  p,
+  ul,
+  ol,
+  dl {
+    font-size: 15px;
+    line-height: 1.8;
+    color: $PRIMARY;
+  }
+
+  p + h2,
+  ul + h2,
+  dl + h2,
+  .imgContainer + h2 {
+    margin-top: 4.5rem;
+  }
+
+  p + img {
+    margin-top: 1rem;
+  }
+
+  p + h4,
+  .imgContainer + h4 {
+    margin-top: 2rem;
+  }
+
+  em {
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  h1 {
+    margin-bottom: 3rem;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $DARK;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 22.5px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.015em;
+  }
+
+  h4 {
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  ul li {
+    margin-bottom: 0.5em;
+  }
+
+  dt {
+    font-weight: 700;
+  }
+
+  .figures {
+    margin-top: 1.5rem;
+  }
+
+  .smallListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .smallList33,
+  .smallList50 {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  dt,
+  dd {
+    margin-bottom: 0.25rem;
+    font-size: 14px;
+  }
+
+  dd {
+    opacity: 0.8;
+  }
+
+  @include responsive(T) {
+    p,
+    ul,
+    ol,
+    dl {
+      font-size: 0.875rem;
+      line-height: 1.8;
+      color: $PRIMARY;
+    }
+
+    .smallList33,
+    .smallList50 {
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @include responsive(D) {
+    .smallList33 {
+      width: 33%;
+    }
+  }
+}

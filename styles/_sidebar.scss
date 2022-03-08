@@ -1,0 +1,119 @@
+.sidebar {
+  position: relative;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+
+  .text {
+    margin-bottom: 0;
+  }
+
+  .name {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    sup {
+      margin-left: -2px;
+      font-size: 0.5rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .info {
+    margin-top: 1rem;
+  }
+
+  .contact {
+    display: flex;
+
+    .links {
+      min-width: 50%;
+      margin-top: 1rem;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .year {
+    position: absolute;
+    top: 17px;
+    right: 1rem;
+
+    sup {
+      position: relative;
+      top: 3px;
+      right: 2px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  @include responsive(540px) {
+    .year {
+      top: 19px;
+      right: 1.5rem;
+    }
+  }
+
+  @include responsive(T) {
+    width: 40%;
+    padding: 50px 0 50px 50px;
+
+    .text {
+      margin-bottom: 1rem;
+    }
+
+    .name {
+      margin-bottom: 5rem;
+      line-height: 1.5;
+    }
+
+    .content {
+      margin-top: 4rem;
+    }
+
+    .info {
+      margin-top: 0;
+    }
+
+    .contact {
+      display: block;
+
+      .links {
+        margin: 1rem 0;
+      }
+    }
+
+    .year {
+      position: absolute;
+      top: initial;
+      right: initial;
+      bottom: 24px;
+      left: 50px;
+      margin-bottom: 0;
+    }
+  }
+
+  @include responsive(D) {
+    position: relative;
+    width: 30%;
+    height: 100vh;
+    padding: 50px;
+    padding-bottom: 1rem;
+
+    .content {
+      margin-top: 5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
